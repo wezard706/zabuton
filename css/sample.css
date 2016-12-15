@@ -1,0 +1,591 @@
+body {
+    background-color: #161616;
+    color: #161616;
+}
+/* ヘッダ */
+header {
+    width: 100%; 
+    height: 200px; 
+    background-color:#fff; 
+}
+#target {
+    border-bottom: 5px solid #000;
+}
+/* ヘッダ(時刻設定) */
+#time-configuration-container {
+     width: 70%; 
+     margin: 10px auto 0;
+}
+/* 表(時刻設定) */
+/* 場所選択 */
+.form-group select {
+    margin: 0 5px;
+}
+#load-btn {
+    /* 縦方向に10px、
+     * 横方向に30pxの余白を指定 */
+    padding: 3px 10px;   
+    margin-left: 10px;
+    color: #53726D;
+}
+#time-table {
+    margin-bottom: 10px;!important
+}
+#time-table th, #time-table td {
+    font-size: 12px;
+    padding: 6px;
+}
+#time-table td:nth-of-type(1) {
+    width: 15%;
+}
+#time-table td:nth-of-type(1) select {
+    width: 70%;
+    margin: 0 auto;
+}
+/* 範囲選択 */
+#time-table td:nth-of-type(2) {
+    width: 15%;
+}
+#time-table td:nth-of-type(2) select {
+    width: 70%;
+    margin: 0 auto;
+}
+/* 日時選択 */
+#time-table td:nth-of-type(3) {
+    width: 55%; 
+    text-align: center;
+}
+#time-table td:nth-of-type(3) div {
+   display: inline;
+}
+#time-table td:nth-of-type(3) select {
+   width: 16%; 
+   margin-right: 6px; 
+   display: inline;
+}
+/* go */
+#time-table td:nth-of-type(4) {
+   width: 10%; 
+   vertical-align: middle;
+}
+#time-table td:nth-of-type(4) input {
+   width: 60%;
+}
+/* 簡易時間選択 */
+#simple-time-select {
+    margin-bottom: 10px;
+}
+#simple-time-select button {
+    width: 9%;
+    text-align: center;
+    font-size: 12px!important;
+    padding: 6px!important;
+}
+
+/* 表示グラフ選択 & ボタングループ */
+#graph-select-btn-wrapper {
+    position: relative;
+}
+/* 表示グラフ選択 */
+/* チェックボタン */
+#check-btn-container {
+    width: 70%; 
+    font-size: 12px;
+    position: absolute;
+    padding-left: 3%;
+    display: inline-block;
+}
+#check-btn-container #col {
+    width: 20%;
+    display: inline-block;
+}
+#check-btn-container #col2 {
+    width: 15%;
+    display: inline-block;
+}
+#check-btn-container #col3 {
+    width: 15%;
+    display: inline-block;
+}
+#check-btn-container #col4 {
+    width: 15%;
+    display: inline-block;
+}
+#check-btn-container #col5 {
+    width: 15%;
+    display: inline-block;
+}
+#check-btn-container .checkbox label {
+    padding-left: 5px;
+}
+#all-none-btn-container {
+     width: 15%; 
+     margin-bottom: 10px; 
+     display: inline-block;
+}
+#all-none-btn-container input {
+     margin: 1px 0; 
+     display: block;
+}
+
+#graph-select-btn-wrapper button, #graph-select-btn-wrapper input {
+    font-size: 12px;
+}
+
+#current {
+  background-color: #ACC277;
+}
+
+/* ダウンロード */
+#dl-place-btn {
+    width: 280px;
+    margin-top: 10px;
+    margin-right: 100px;
+
+}
+#header-btn-group {
+    position: absolute;
+    left: 70%;
+}
+#header-btn-group input, #header-btn-group button {
+    margin-bottom: 5px;
+}
+#download-container {
+    width: 550px;
+    font-weight: bold;
+}
+#download-btn {
+    margin: 3px 0px 0px 30px;
+}
+#tainer-from {
+    margin-bottom: 10px;
+}
+.remodal-bg {
+    margin-right: 20px;
+}
+.btn-container {
+    font-size: 32px;
+}
+#pb-container {
+    margin-top: 10px;
+    margin-left: 60px;
+}
+/* ヘッダ(制御設定) */
+#control-configuration-container {
+     width: 99%; 
+     margin: 2px auto 0;
+}
+#control-configuration-container table {
+     font-size: 8px;
+     margin-bottom: 3px!important;
+     text-align: center!important;
+     vertical-align: middle!important
+}
+#control-configuration-container table th,
+#control-configuration-container table td {
+    padding: 1px!important;
+}
+/* 表(制御設定＋設定履歴)*/
+#ch-container table {
+    
+}
+/* 表(制御設定) */
+#control-configuration-container #control-configuration-table {
+    width: 85%;
+}
+#control-configuration-table th:nth-of-type(1) {
+    width: 5%;
+}
+#control-configuration-table th:nth-of-type(2) {
+    width: 20%;
+}
+#control-configuration-table th:nth-of-type(3) {
+    width: 5%;
+}
+#control-configuration-table th:nth-of-type(4) {
+    width: 32%;
+}
+#control-configuration-table th:nth-of-type(5) {
+    width: 32%;
+}
+#control-configuration-table th:nth-of-type(6) {
+    width: 3%;
+}
+#control-configuration-table tr th.mode {
+    width: 5%;
+}
+#control-configuration-table tr th.val {
+    width: 5%;
+}
+#control-configuration-table td:nth-of-type(2) div,
+#control-configuration-table td:nth-of-type(4) div,
+#control-configuration-table td:nth-of-type(5) div {
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+#control-configuration-table select,
+#control-configuration-table input {
+    font-size: 8px;
+    height: 26px;
+}
+/* 時刻設定のセレクトボタン */
+#control-configuration-table td:nth-of-type(2) div select {
+    width: 18%; 
+    margin-right: 3px;
+    display: inline; 
+}
+/* 履歴 */
+#history-table {
+    width: 13%;
+    height: 66px;
+    margin-left: 5px;
+}
+#history-td {
+    vertical-align: middle!important;
+}
+#history-force-container td button {
+    width: 50px;
+}
+/* 履歴（モーダル） */
+.remodal-history h3 {
+    font-size: 16px;
+    text-decoration: underline;
+}
+.remodal-history table {
+    font-size: 12px;
+}
+
+
+/* 表(制御設定) */
+#control-configuration-container #current-configuration-table {
+    width: 78%;
+}
+#current-configuration-table tr:nth-child(1) th:nth-of-type(2),
+#current-configuration-table tr:nth-child(1) th:nth-of-type(3) {
+    width: 50%;
+}
+#current-configuration-table th:nth-of-type(1) {
+    width: 3%;
+}
+#current-configuration-table th:nth-of-type(2), 
+#current-configuration-table th:nth-of-type(8) {
+    width: 10%;
+}
+#current-configuration-table th:nth-of-type(3),
+#current-configuration-table th:nth-of-type(9) {
+    width: 7%;
+}
+#current-configuration-table th:nth-of-type(4),
+#current-configuration-table th:nth-of-type(10) {
+    width: 7%;
+}
+#current-configuration-table th:nth-of-type(5),
+#current-configuration-table th:nth-of-type(11) {
+    width: 6%;
+}
+#current-configuration-table th:nth-of-type(6),
+#current-configuration-table th:nth-of-type(12) {
+    width: 4%;
+}
+#current-configuration-table th:nth-of-type(7),
+#current-configuration-table th:nth-of-type(13) {
+    width: 4%;
+}
+#current-configuration-table tr th.mode {
+    width: 4%;
+}
+#current-configuration-table tr th.val {
+    width: 4%;
+}
+/* 強制潅水 */
+#force-start, #force-stop {
+    width: 10%;
+    height: 126px;
+    margin-left: 5px;
+}
+
+/* ヘッダ(週間蓄積データ) */
+#integrated-data #integrated-data-container {
+     width: 100%; 
+     margin: 0 auto;
+}
+#integrated-data #integrated-data-title {
+    margin-top: 20px;
+}
+#integrated-data table {
+    width: 100%;
+    height: 200px;
+    table-layout: fixed;
+    font-size: 1px;
+}
+#integrated-data table th:nth-of-type(1) {
+    width: 4em;
+}
+#integrated-data table th, #integrated-data table td {
+    padding: 0;
+}
+/* サイドバー */
+#sidebar {
+     width: 25%;
+     background-color: #fff; 
+     margin-left: -15px; 
+     padding: 10px;
+     top: 205px;
+}
+#sidebar table {
+    font-size: 12px;
+}
+#sidebar .ttilele, #sidebar table th, #sidebar table td {
+    padding: 4px 8px!important;
+}
+/* 表(MinRLI, LAI, DayET) */
+#sidebar table td:nth-of-type(1), 
+#sidebar table td:nth-of-type(2) {
+    width: 30%;
+}
+/* 表・表タイトル(給液時刻・回数) */
+#suptitle {
+    margin-top: 20px;
+}
+#liquid-supply-container {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: content-box; 
+    -webkit-box-sizing: content-box;
+}
+#liquid-supply-container .A17, #liquid-supply-container .A18 {
+    height: 250px;
+    margin-bottom: 10px;
+}
+#liquid-supply-container table {
+    border: 0;
+    border-left: 1px solid #ddd; 
+    margin-bottom: 0; 
+    box-sizing: content-box; 
+    -webkit-box-sizing: content-box;
+}
+#liquid-supply-container .ttile { 
+    width: 100%;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+#liquid-supply-container .ttitle table th { 
+    padding: 3px; 
+}
+#liquid-supply-container .theader {
+    float: left;    
+    width: 30%;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+#liquid-supply-container .theader th:nth-child(1) {
+    width: 30%;
+} 
+#liquid-supply-container .tbody {
+    float: left;
+    width: 70%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+#liquid-supply-container .tbody table td {
+    width: 80px;
+    table-layout: fixed;
+}
+#liquid-supply-container .tbody td {
+    border: 0; 
+    border-top: 1px solid #ddd; 
+    border-right: 1px solid #ddd;
+}
+#liquid-supply-container .tbody tr:nth-child(2) {
+    border-bottom: 1px solid #ddd
+}
+#sidebar .a0 {
+    margin-bottom: 10px;
+}
+#sidebar .a1 {
+    margin-bottom: 10px;
+}
+/* 表(給液時刻・回数)の特殊な設定 */
+/* 2つのテーブルから1つのテーブルを構成 */
+.separate-table {
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.separate-table th, .separate-table td {
+    text-align: center;
+}
+.separate-table th,
+.separate-table td {
+  overflow: hidden; /* データが幅を超えたとき非表示に */
+  white-space: nowrap; /* データの折り返しを防止 */
+}
+.separate-table td p {
+  margin: 0; /* 余分なマージンを消去 */
+}
+/* IE6 */
+.separate-table {
+  _border-collapse: collapse; /* IE6がborder-spacing: 0;に対応していないので */
+}
+/* IE7 */
+*:first-child+html table.separate-table {
+  border-collapse: collapse; /* IE7がborder-spacing: 0;に対応していないので */
+}
+
+/* グラフ */
+#main {
+     width: 73%;
+     margin-left: 5px; 
+     position: absolute; 
+     top: 205px; 
+     left: 25%;
+}
+#main #main-container {
+     background-color: #fff; 
+     position: relative;
+}
+#main #jquery-ui-toggle-left {
+     font-size: 18px;
+     margin-top: 10px; 
+     margin-left: 10px;
+}
+#main #jquery-ui-toggle-right {
+     font-size: 18px; 
+     position: absolute; 
+     right: 10px; 
+     top: 10px;
+}
+.title {
+    font-size: 14px; 
+    font-weight: bold;
+}
+#main #main-container {
+    padding-bottom: 30px;
+}
+#main #download-table {
+    width: 80%;
+    margin: 0 auto;
+}
+/* 日時選択 */
+#download-table td:nth-of-type(1) {
+    width: 90%; 
+    text-align: center;
+}
+#download-table td:nth-of-type(1) div {
+   display: inline;
+}
+#download-table td:nth-of-type(1) select {
+   width: 8%; 
+   margin-right: 6px; 
+   display: inline;
+}
+/* go */
+#download-table td:nth-of-type(2) {
+   width: 10%; 
+   vertical-align: middle;
+}
+#download-table td:nth-of-type(2) input {
+   width: 60%;
+}
+#main .draggable {
+    width: 100%;
+    height: 200px;
+    float: left; /*グラフのドラッグ&ドロップ可の代償*/
+    position: relative; /*グラフ横にhandleをabsoluteを用いて配置*/
+}
+#main .graphbox {
+    width: 45%; 
+    height: 200px;
+    position: absolute;
+    left: 10px;
+}
+#main .legendbox {
+    width: 55%; 
+    height: 200px!important;
+    position: absolute;
+    right: 0px;
+}
+#main .handle {
+    width: 15px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    background-color: #c3c3c3;
+}
+/* 全体 */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+.fixed {
+    position: fixed;
+    z-index: 100;
+}
+td {
+    color: #404040;
+    background-color: #f7f7f7;
+}
+
+th {
+    color: #fafafa;
+    background-color: #53726D;
+}
+#time-configuration table th {
+    background-color: #48663A!important;
+}
+.a0 table th {
+    color: #fafafa!important;
+    background-color: #314C37!important;
+}
+.a1 table th {
+    color: #f5f5f5!important;
+    background-color: #314C37!important;
+}
+.b0 table th {
+    background-color: #789EBF!important;
+}
+.b1 table th {
+    background-color: #30588c!important;
+}
+.b2 table th {
+    background-color: #173673!important;
+}
+th.a0, td.a0  {
+    color: #fafafa!important;
+    background-color: #314C37!important;
+}
+th.a1, td.a1 {
+    color: #f5f5f5!important;
+    background-color: #314C37!important;
+}
+th.b0, td.b0 {
+    color: #f5f5f5!important;
+    background-color: #789EBF!important;
+}
+th.b1, td.b1  {
+    color: #f5f5f5!important;
+    background-color: #30588c!important;
+}
+th.b2, td.b2  {
+    color: #f5f5f5!important;
+    background-color: #173673!important;
+}
+#force-container .table-bordered th,#force-container .table-bordered td{
+    border-color: #a76805!important;
+}
+/* フォーム(デフォルト)の色 */
+.form-control {
+    border-color: #bfba24!important;
+}
+/* ボタン(デフォルト)の色 */
+.btn-default {
+    border-color: #bfba24!important;   
+}

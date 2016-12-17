@@ -56,6 +56,11 @@
          var putData= data+"<br/>";
         $("#ack").append(putData);
         });
+
+        socket.on('chart', function(data){
+         var chartData = JSON.parse(data);
+         console.log(data);
+        });
         
         $('#btn').click(function(){
         socket.emit("greet","Hello socketIO");
@@ -67,6 +72,7 @@
     
         $('#stop_btn').click(function () {
           socket.emit("stop", "Hello socketIO");
+          socket.emit("sql", "Hello socketIO");
         });
 
       });
@@ -93,8 +99,8 @@
             </div>
           </div>
           <div id="control_zabuton_container">
-            <input id="startbtn" type="button" class="btn btn-primary btn-lg" value="動かす" onclick=""/>
-            <input type="stopbtn" class="btn btn-primary btn-lg" value="止める" onclick=""/>
+            <input id="start_btn" type="button" class="btn btn-primary btn-lg" value="動かす" onclick=""/>
+            <input id="stop_btn" type="button" class="btn btn-primary btn-lg" value="止める" onclick=""/>
           </div>
           <div id="footer" class="row">
             <div id="member" class="circle col-lg-4 footer_contents">
